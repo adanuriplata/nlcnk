@@ -1,0 +1,55 @@
+
+// Styles include mkp container y section
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  @include md {
+    max-width: $md-d-w;
+  };
+  @include lg {
+    max-width: $lg-d-w;
+  };
+  @include xl {
+    max-width: $xl-d-w;
+  };
+}
+
+.section {
+  padding: $sm-s-p;
+}
+
+// styles custom section user
+
+.cnk-hero {
+  background-color: $gray;
+}
+
+.cnk-services {
+  background-color: $white;
+}
+
+.cnk-call-to-action {
+  background-color: $red;
+}
+
+.cnk-partners{
+  background-color: $white;
+}
+
+.cnk-customers {
+  background-color: $orange;
+}
+
+.cnk-contact {
+	background-color: $black;
+}
+
+.mkp-header{
+  background-image: url('assets/img/bg-header.jpg');
+  background-size: cover;
+  background-position: center;
+}
+

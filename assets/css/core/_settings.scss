@@ -1,0 +1,78 @@
+$heading-font: 'Montserrat',
+sans-serif;
+$other-font: 'Alfa Slab One',
+sans-serif;
+$blog-font: 'Amiri',
+serif;
+// $second-font: 'Dosis', sans-serif;
+
+//color font
+$font-service-title: #EE2D32;
+$font: #4F4F51;
+$font-white: #FFFFFF;
+
+//colors
+$black: #000000;
+$gray: #F3F3F3;
+$red: #EE2D32;
+$orange: #F26B37;
+$white: #FFFFFF;
+
+
+//mkp conatiner max width
+$md-d-w: 750px;
+$lg-d-w: 970px;
+$xl-d-w: 1130px;
+
+//mkp section padding
+$sm-s-p: 40px 0;
+
+
+//BreakPoints Media queries
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+// Small devices
+@mixin sm {
+	@media (min-width: #{$screen-sm-min}) {
+		@content;
+	}
+}
+
+// Medium devices
+@mixin md {
+	@media (min-width: #{$screen-md-min}) {
+		@content;
+	}
+}
+
+// Large devices
+@mixin lg {
+	@media (min-width: #{$screen-lg-min}) {
+		@content;
+	}
+}
+
+// Extra large devices
+@mixin xl {
+	@media (min-width: #{$screen-xl-min}) {
+		@content;
+	}
+}
+
+// Custom devices
+@mixin cust($screen) {
+	@media (min-width: $screen+'px') {
+		@content;
+	}
+}

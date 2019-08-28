@@ -1,0 +1,129 @@
+// HERO
+
+.cnk-hero__container {
+  &__text {
+    &__text {
+      max-width: 300px;
+    }
+
+  }
+  &__form {
+    margin: 0 auto;
+    &__logo {
+      padding: 20px;
+    }
+    &__form{
+      padding: 15px;
+      // border-radius: 15px;
+    }
+  }
+}
+
+//END HERO
+
+// SERVICES
+.cnk-services__container {
+  &__title {
+    font-size: 32px;
+  }
+}
+
+.cnk-services__content {
+  >div {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  &__item {
+    margin: 1rem 0;
+    justify-content: space-between;
+    align-items: center;
+    div {
+      max-width: 50%;
+    }
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+    .item-text {
+      p {
+        max-width: 400px;
+      }
+    }
+  }
+}
+// END SERVICES
+
+//call to action
+.cnk-call-to-action{
+  &__container {
+    font-size: 35px;
+  }
+}
+
+//END CALL TO ACTION
+
+//TECHS
+
+.cnk-partners__container__technologies {
+  >div {
+    max-width: 800px;
+    margin: 0 auto;
+    justify-content: space-around;
+  }
+}
+
+.tech-item {
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  max-width: 30%;
+}
+
+
+.cnk-contact__container {
+  &__form {
+    margin: 0 auto;
+    padding: 15px;
+    // border-radius: 15px;
+  }
+}
+
+
+// FOOTER
+
+.cnk-contact {
+  padding-bottom: 1px;
+  &__container {
+    &__data {
+      margin: 0 auto;
+      &__text {
+        max-width: 300px;
+        .contact-text-social {
+          ul li {
+            display: inline;
+            padding: 5px;
+          }
+        }
+      }
+      &__logo {
+      	max-width: 300px;
+
+      }
+    }
+
+  }
+
+}
+
+.cnk-contact__footer-phrase {
+  font-size: 23px;
+  letter-spacing: 4px;
+  p{
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  span {
+    font-size: 40px;
+    letter-spacing: normal;
+  }
+
+}

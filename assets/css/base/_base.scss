@@ -1,8 +1,22 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+
+body {
+	margin: 0;
+}
+
+main {
+	display: block;
+  margin: 0;
+}
+
 body {
   font-family: $heading-font;
-  color: $font-color;
-  background: $background-color;
-  margin: 0;
+  color: $font;
 }
 
 img {
@@ -18,15 +32,14 @@ p, ul, a, li, span{
 }
 
 a {
-  color:$font-color;
   text-decoration: none;
 }
 
-
-
-.mkp-container {
-  padding: 20px 15px;
+ul {
+  margin: 0;
+  padding: 0;
 }
 
-//WP CUSTOM
-
+li {
+  list-style: none;
+}

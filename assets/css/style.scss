@@ -9,12 +9,16 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 // @import 'vendors/bulma-custom/mystyles';
-// @import 'core/settings';
-// @import 'base/base';
-// @import 'layout/layout';
-// @import 'states/state';
+@import 'core/settings';
+@import 'base/base';
+@import 'base/normalize';
+@import 'layout/layout';
+@import 'vendors/animate/animate';
+@import 'states/states';
+@import 'pages/marketing';
+@import 'pages/formLeads';
 // @import 'components/buttons';
 // @import 'components/circulos';
 // @import 'components/form';
-// @import 'pages/home';
+
 // @import 'components/footer';
