@@ -19,10 +19,6 @@
         </div>
       </div>
       <div class="cnk-hero__container__form">
-        <div class="cnk-hero__container__form__logo is-center">
-          <img src='<?php $url = get_template_directory_uri() . "/assets/img/logos/logo-white.png";
-                    echo esc_url($url); ?>' alt="logo conektica">
-        </div>
         <div class="cnk-hero__container__form__form bg-is-white is-shadow-1">
           <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
           <script>
@@ -80,15 +76,15 @@
         foreach ($services as $service) {
           foreach ($service as $item => $value) ?>
 
-        <div class="cnk-services__content__item d-flex flex-wrap">
-          <div class="item-text">
-            <h3 class="is-red"> <?php echo $service['title'] ?></h3>
-            <p class="is-light is-justify"> <?php echo $service['description'] ?></p>
+          <div class="cnk-services__content__item d-flex flex-wrap">
+            <div class="item-text">
+              <h3 class="is-red"> <?php echo $service['title'] ?></h3>
+              <p class="is-light is-justify"> <?php echo $service['description'] ?></p>
+            </div>
+            <div class="item-img">
+              <img src='<?php echo esc_url($cnkUrl . $service['image'] . ".png"); ?>' alt="<?php echo $service['title']; ?>">
+            </div>
           </div>
-          <div class="item-img">
-            <img src='<?php echo esc_url($cnkUrl . $service['image'] . ".png"); ?>' alt="<?php echo $service['title']; ?>">
-          </div>
-        </div>
         <?php }
         ?>
 
@@ -129,9 +125,9 @@
         $cnkUrl = get_template_directory_uri() . "/assets/img/techs/";
         foreach ($partners as &$valor) {
           ?>
-        <div class="tech-item">
-          <img src='<?php echo esc_url($cnkUrl . $valor . ".png"); ?>' alt='<?php echo $valor ?>'>
-        </div>
+          <div class="tech-item">
+            <img src='<?php echo esc_url($cnkUrl . $valor . ".png"); ?>' alt='<?php echo $valor ?>'>
+          </div>
         <?php
         }
         ?>
@@ -142,6 +138,9 @@
 </section>
 
 <section class="cnk-customers section">
+  <div class="cnk-call-to-action__container container">
+    <p class="is-center is-white is-bold">Trabajamos con marcas lideres a nivel nacional <br> </p>
+  </div>
 </section>
 
 <section class="cnk-contact section">
@@ -163,11 +162,16 @@
           </div>
           <div class="contact-text-social">
             <ul>
-              <li> <a href="https://www.linkedin.com/company/conektica-agencia-de-publicidad/?originalSubdomain=mx"> <img src='<?php $url = get_template_directory_uri() . "/assets/img/ico/ico-link.png"; echo esc_url($url); ?>' alt="" target="_blank"> </a> </li>
-              <li> <a href="https://www.facebook.com/conekticapublicidad"> <img src='<?php $url = get_template_directory_uri() . "/assets/img/ico/ico-face.png"; echo esc_url($url); ?>' alt="" target="_blank"> </a> </li>
-              <li> <a href="https://www.instagram.com/conektica/"> <img src='<?php $url = get_template_directory_uri() . "/assets/img/ico/ico-inst.png"; echo esc_url($url); ?>' alt="" target="_blank"> </a> </li>
-              <li> <a href="https://twitter.com/Conektica"> <img src='<?php $url = get_template_directory_uri() . "/assets/img/ico/ico-tw.png"; echo esc_url($url); ?>' alt="" target="_blank"> </a> </li>
-              <li> <a href="https://www.behance.net/conektica"> <img src='<?php $url = get_template_directory_uri() . "/assets/img/ico/ico-be.png"; echo esc_url($url); ?>' alt="" target="_blank"> </a> </li>
+              <li> <a href="https://www.linkedin.com/company/conektica-agencia-de-publicidad/?originalSubdomain=mx"> <img src='<?php $url = get_template_directory_uri() . "/assets/img/ico/ico-link.png";
+                                                                                                                                echo esc_url($url); ?>' alt="" target="_blank"> </a> </li>
+              <li> <a href="https://www.facebook.com/conekticapublicidad"> <img src='<?php $url = get_template_directory_uri() . "/assets/img/ico/ico-face.png";
+                                                                                      echo esc_url($url); ?>' alt="" target="_blank"> </a> </li>
+              <li> <a href="https://www.instagram.com/conektica/"> <img src='<?php $url = get_template_directory_uri() . "/assets/img/ico/ico-inst.png";
+                                                                              echo esc_url($url); ?>' alt="" target="_blank"> </a> </li>
+              <li> <a href="https://twitter.com/Conektica"> <img src='<?php $url = get_template_directory_uri() . "/assets/img/ico/ico-tw.png";
+                                                                      echo esc_url($url); ?>' alt="" target="_blank"> </a> </li>
+              <li> <a href="https://www.behance.net/conektica"> <img src='<?php $url = get_template_directory_uri() . "/assets/img/ico/ico-be.png";
+                                                                          echo esc_url($url); ?>' alt="" target="_blank"> </a> </li>
             </ul>
           </div>
         </div>
